@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="我们与世界相遇，常常先于对它的理解。在判断与方法逐渐形成之后，最初触动我们的东西，是否还在。">
+  <meta name="theme-color" content="#153cbb"><title>为感受革命 · Let feeling lead.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=blue-ribbon-01"><link rel="stylesheet" href="player.css?v=blue-ribbon-01"><link rel="stylesheet" href="editorial.css?v=thought-03"><link rel="stylesheet" href="works.css?v=reader-03">
+  <link rel="stylesheet" href="narrative.css?v=monitor-01">
+</head>
+<body>
+  <a class="skip" href="#music">跳至聆听区</a>
+  <header class="nav"><a class="wordmark" href="#top" aria-label="回到首页"><span class="open-sign" aria-hidden="true">( &nbsp; )</span></a><nav aria-label="主导航"><a href="#creator">认识主创</a><a href="#writing">作品</a><a href="#ai-works">音乐人工具</a><a href="#about">写在最后</a></nav><span class="edition">AN OPEN SPACE</span></header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-meta"><span>A WAY OF FEELING</span><span>music human spirit</span></div>
+      <div class="hero-lettering">
+        <h1 id="hero-title"><span class="title-first">为感受</span><span class="title-second">革命</span></h1>
+        <svg class="thread thread-desktop" viewBox="0 0 1000 390" role="img" aria-label="Let feeling lead."><image href="assets/ribbon-desktop.svg?v=ribbon-02" width="1000" height="390"/><text x="724" y="278" transform="rotate(-7 724 278)">Let feeling lead.</text></svg>
+        <svg class="thread thread-mobile" viewBox="0 0 360 280" aria-hidden="true"><image href="assets/ribbon-mobile.svg?v=ribbon-02" width="360" height="280"/><text x="145" y="248" transform="rotate(-5 145 248)">Let feeling lead.</text></svg>
+      </div>
+      <div class="hero-bottom"><p>我们与世界相遇，常常先于对它的理解。一段声音、一句话，甚至一阵说不清的迟疑，都会留下痕迹。<br>后来，我们用思考整理它们，慢慢形成自己的判断与方法。而我在意的是，走到这一步，最初触动我们的东西，是否还在。</p><a class="round-link" href="#music"><span><small>SCROLL TO EXPLORE</small></span><b aria-hidden="true">↘</b></a></div>
+      <div class="blue-haze revolution-haze" aria-hidden="true"></div>
+    </section>
+    <div class="personal-row narrative-section"><section class="listening section compact-player" id="music" aria-labelledby="music-title">
+      <h2 class="module-title" id="music-title"><span>你可以控制声音</span><span lang="en">CONTROL THE SOUND</span></h2>
+      <div class="listening-grid">
+        <div class="record-stage" aria-hidden="true"><span class="record-edition">SIDE A / AN OPEN WINDOW</span><div class="record"><div class="record-label"><span>ANTÔNIO CARLOS JOBIM</span><strong>Wave</strong><i></i><span>33⅓ RPM · 1967</span></div></div><span class="record-signature">a little wave, a little quiet.</span></div>
+        <div class="player-panel"><span class="eyebrow">ON THE TURNTABLE</span><h3 class="album-title">Wave<span>Antônio Carlos Jobim</span></h3><div class="track-heading"><p id="track-name">等待第一段旋律</p><span id="track-counter">— / —</span></div><p id="player-status" role="status" aria-live="polite">正在准备播放器…</p>
+          <div class="transport"><button id="previous" type="button" aria-label="上一首" disabled>↤</button><button id="play-toggle" type="button" aria-label="播放音乐" aria-pressed="false" disabled>▶</button><button id="next" type="button" aria-label="下一首" disabled>↦</button></div>
+          <label class="sr-only" for="seek">播放进度</label><input id="seek" class="seek" type="range" min="0" max="1000" value="0" disabled><div class="time-row"><span id="current-time">0:00</span><span id="duration">0:00</span></div>
+          <div class="volume-row"><label for="volume">音量</label><input id="volume" type="range" min="0" max="100" value="45"><output id="volume-value">45%</output></div>
+          <p class="listening-note">如果音乐没有自行响起，轻点播放。<br>让旋律慢慢进入，也可以随时暂停。</p><ol id="track-list" class="track-list" aria-label="专辑曲目"></ol>
+          <div id="spotify-panel" class="spotify-panel" hidden><div id="spotify-embed"><iframe title="Wave — Antônio Carlos Jobim，Spotify 专辑播放器" src="https://open.spotify.com/embed/album/7L5JR421ajSAQnG8sU0EeX?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div><a class="spotify-link" href="https://open.spotify.com/album/7L5JR421ajSAQnG8sU0EeX" target="_blank" rel="noopener noreferrer">在 Spotify 中打开 ↗</a></div>
+          <div id="soundcloud-panel" class="soundcloud-panel" hidden><iframe id="soundcloud-embed" title="Wave — Antônio Carlos Jobim，SoundCloud 单曲播放器" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F286477865&amp;color=%23153cbb&amp;auto_play=false&amp;show_artwork=false&amp;visual=false&amp;show_user=true&amp;show_comments=false&amp;show_reposts=false&amp;show_teaser=false"></iframe></div>
+          <div id="local-audio-form" class="local-audio-form"><label for="local-audio">选择音频试听</label><input id="local-audio" type="file" accept="audio/*,.mp3,.m4a,.ogg,.wav,.flac,.aac" multiple><p id="source-help">完整音源待接入。可先选择本机音频，仅在当前浏览器试听。</p></div>
+        </div>
+      </div><audio id="album-audio" preload="metadata" crossorigin="anonymous"></audio>
+    </section>
+    <aside class="personal-intro identity-field" id="creator" aria-labelledby="identity-title">
+      <h2 class="module-title" id="identity-title"><span>从这里认识主创</span><span lang="en">MEET THE CREATOR</span></h2>
+      <ul class="identity-cloud" aria-label="构成我的一些关键词">
+        <li class="identity-word word-music" tabindex="0" data-thought="持续品鉴 创作中……&#10;已发表2首单曲"><span class="identity-label">音乐</span></li>
+        <li class="identity-word word-words" tabindex="0" data-thought="2020“岭南杯”征文第二名"><span class="identity-label">文字</span></li>
+        <li class="identity-word word-design" tabindex="0" data-thought="从Photoshop到Figma&#10;从PR AE到ChatGPT（？）"><span class="identity-label">设计</span></li>
+        <li class="identity-word word-feeling" tabindex="0" data-thought="just feeling"><span class="identity-label">感受</span></li>
+        <li class="identity-word word-psychology" tabindex="0" data-thought="中科院心理研究所MAP"><span class="identity-label">心理学研究生</span></li>
+        <li class="identity-word word-product" tabindex="0" data-thought="四段大厂实习经验"><span class="identity-label">产品经理</span></li>
+        <li class="identity-word word-experience" tabindex="0" data-thought="洞察 x 用研 x C端经验"><span class="identity-label">用户体验</span></li>
+        <li class="identity-word word-ai" tabindex="0" data-thought="从2023到未来&#10;从P Eng.到H Eng.到……"><span class="identity-label">AI</span></li>
+        <li class="identity-word word-finance" tabindex="0" data-thought="中山大学岭南学院金融系" data-thought-link-text="岭南学院" data-thought-link="https://lingnan.sysu.edu.cn/"><span class="identity-label">金融</span></li>
+        <li class="identity-word word-technology" tabindex="0" data-thought="懂点前后端、数据流&#10;课题软件专利申请中……"><span class="identity-label">技术</span></li>
+        <li class="identity-word word-strategy" tabindex="0" data-thought="快手推荐策略 | game strategy"><span class="identity-label">策略</span></li>
+      </ul>
+      <span class="field-note">always becoming.</span>
+    </aside></div>
+<!-- METEOR:START -->
+    <section class="writing-section narrative-section" id="writing" aria-labelledby="writing-title">
+      <h2 class="module-title" id="writing-title"><span>还在用纸笔创作的日子</span><span lang="en">FICTION</span></h2>
+      <blockquote class="writing-quote" cite="#meteor-work">
+        <p>“这应是一份特别的馈赠，鱼儿却偏偏忘却，良久不能重忆。”</p>
+      </blockquote>
+      <details class="literary-work" id="meteor-work">
+        <summary id="meteor-title"><h3>《流星记忆》</h3><span class="work-toggle-hint"><span class="when-collapsed">点此展开 <b aria-hidden="true">⌄</b></span><span class="when-expanded">点此收起 <b aria-hidden="true">⌃</b></span></span></summary>
+        <details class="meteor-book" id="meteor-book">
+          <summary class="book-cover">
+            <span class="cover-face">
+              <span class="cover-series" lang="en">A STORY TO KEEP</span>
+              <span class="cover-title">流星记忆</span>
+              <span class="cover-award">2020“岭南杯”获奖作品</span>
+              <span class="cover-epigraph">你知道流星的寿命<br>有多久吗？<small>题记</small></span>
+              <span class="cover-date">2020.07.30</span>
+              <span class="cover-invitation">翻开这本书 <span aria-hidden="true">↗</span></span>
+            </span>
+            <span class="cover-close-label">← 合上书页，回到封面</span>
+          </summary>
+        <article class="literary-reader" aria-labelledby="meteor-title" tabindex="-1">
+          <div class="book-spread">
+          <section class="literary-page" id="meteor-page-1" aria-label="第 1 页">
+          <div class="literary-columns"><p class="literary-paragraph">就好像是睡了很久，鱼儿感觉整个人昏昏沉沉的。下意识地敧歪脑袋，把小臂遮在额头上，才勉强微睁右眼，邂逅蓝白色窗帘透入的光。</p>
+<p class="literary-paragraph">“你醒啦~”从脚跟那边传来一个轻柔的声音，轻柔得有些陌生，她这才意识到自己是平躺着的，躺在某个并不熟悉的地方。她想说话，双唇却一时黏住。“这里是康复中心，请您先静候，医生马上就来了。”</p>
+<p class="literary-paragraph">医生？我怎么了？鱼儿刚皱起眉头想思索，就觉太阳穴传来一阵隐痛。</p>
+<p class="literary-paragraph">“小姐，您可能还不太了解目前的情况，这是巡警送您来前拍下的现场照片。”闻讯前来的医生递给她一张黑白的彩色相片，铺开的闪光灯影在夜里真显得突兀，“您因头部被钝器击中而昏迷，通过核磁共振检查，我们发现您遭受了轻微的脑损伤，但暂未察觉任何威胁或障碍。另外，当晚您血液中的酒精含量严重超标。”</p>
+<p class="literary-paragraph">“酒精”仿佛击中了她的记忆点，是艳红的氖灯和翡翠绿的玻璃瓶。但手中的相片着实令她茫然，侧躺着的人披头散发，三英寸外一块裂开的石头，煤黑色，与大理石地砖格格不入。</p></div>
+
+          <span class="book-folio" aria-hidden="true">1</span>
+        </section>
+<section class="literary-page" id="meteor-page-2" aria-label="第 2 页">
+          <div class="literary-columns"><p class="literary-paragraph">“应该是意外伤，幸亏大脑自愈得快，再过两天，您就可以出院了。”“嗯。”直到鼻音引起头腔的颤鸣，她才确认这不是一场清醒的梦境。</p>
+<p class="literary-paragraph">几年前，鱼儿就开始独自生活了，没有知己，也没有太多回忆。出院回到家中，偶尔也会记不起事，但鱼儿并没觉得不正常，就像用过的东西总该处理掉。直到......</p>
+<p class="literary-paragraph">直到这天，她在抽屉里翻出了一只礼盒，勃艮第红的盒体，暗紫的缎带上还沾着零星金粉，精美得让她有些晕厥。小心翼翼地打开却出乎意料地，是煤黑色的石碴，大小不一的碎块，应该是没能抵住时浪悄然瓦解。</p>
+<p class="literary-paragraph">这应是一份特别的馈赠，鱼儿却偏偏忘却，良久不能重忆。与那夜若即若离的神秘缘分，更使她心生空落，她迫切想找回记忆，从虚妄中。</p></div>
+
+          <span class="book-folio" aria-hidden="true">2</span>
+        </section>
+<section class="literary-page" id="meteor-page-3" aria-label="第 3 页">
+          <div class="literary-columns"><p class="literary-paragraph">在那样的夜里，应该是瓦砾，从屋脊滚落，本该归于土地，却在黑暗里迷失方向。嗅着本不属于它的醇香，和一副躯体发生一次不期而遇的碰撞，割断那拽着魂的最后一股绳。透明的脚步攀上台阶，从莫奈的壁画中间穿过，推开刻着纪伯伦墓志铭<sup><a id="meteor-ref-1" href="#meteor-note-1" aria-label="注释 1">[1]</a></sup>的二十世纪木门，抵达被黛黑色包围的屋顶，俯身触摸又若有所失地摇头，却在放眼那刻，发现属于马尔代夫的海。</p></div>
+          <aside class="literary-notes" aria-label="本页注释"><ol><li id="meteor-note-1" value="1">黎巴嫩诗人纪伯伦为自己写下墓志铭：“我就站在你的身边，像你一样地活着。把眼睛闭上，目视你的内心，然后转过脸，我的身体与你同在。” <a href="#meteor-ref-1" aria-label="返回注释 1 的正文">↩</a></li></ol></aside>
+          <span class="book-folio" aria-hidden="true">3</span>
+        </section>
+<section class="literary-page" id="meteor-page-4" aria-label="第 4 页">
+          <div class="literary-columns"><p class="literary-paragraph">瞭望无际的海滩确实是各色石沙绝佳的藏匿地，大海就像一个深蓝色的收纳盒，在潮涨时埋下神秘，潮落时开启惊喜。从黄昏的熙攘到夜的宁静，拾贝人还在精挑细拣，不知是留自己珍藏，还是在酣睡中寄向远方。银色的飞鱼偶尔在深夜跃出水面，在冷月下抛开一道弧形的泪。或许有几滴泪珠能溅到那颗不起眼的石上，在每个夜里漾起清脆的回响，久之终使其砰然绽裂，自此敞开心扉。假如某天阿狄丽娜<sup><a id="meteor-ref-2" href="#meteor-note-2" aria-label="注释 2">[2]</a></sup>路过这片海滩，也会在飘飘长发的蔽罩下，躲开月神塞勒涅的窥察，悄悄把它装进口袋，将这海央天堂的圣石献给维纳斯，报答爱的恩赐。</p>
+<p class="literary-paragraph">不过，踏过千万只脚丫的马尔代夫海滩终究不像是那煤黑色石碴的原驻地，那种黑色的沉寂仿佛来自更深暗的禁地，甚至一接触空气就会变质、离析。鱼儿携着礼盒下潜，朝着无人涉足的溟渊试探。</p></div>
+          <aside class="literary-notes" aria-label="本页注释"><ol><li id="meteor-note-2" value="2">希腊神话中皮格马利翁雕刻的一个美丽少女，被爱神维纳斯赐予生命并与皮格马利翁结为夫妻。 <a href="#meteor-ref-2" aria-label="返回注释 2 的正文">↩</a></li></ol></aside>
+          <span class="book-folio" aria-hidden="true">4</span>
+        </section>
+<section class="literary-page" id="meteor-page-5" aria-label="第 5 页">
+          <div class="literary-columns"><p class="literary-paragraph">拨开浅层的绿衣，紧随小丑鱼的队伍，从斑斓珊瑚的礁柱拱门间穿过，甚至来不及欣赏褐藻的曼妙舞姿。水母簇拥着鲸鲨气势汹汹地巡逻，可最凶残的禁区卫卒都对来者视而不见，或者说纵使他们眼神犀利，也无法捕捉人类最飘忽的意识旅行。管蠕虫在至深处招唤，预示着生机的消亡与死寂的来临。如同进化史的倒溯，从孔雀鱼到海参，从彩色到黑，都终归于仅剩第三元素的虚空，还有，还有石与之相伴永驻。</p>
+<p class="literary-paragraph">陌生的微光从遥远倏然戳破了森冷，模糊的深影勾勒出“鹦鹉螺号”<sup><a id="meteor-ref-3" href="#meteor-note-3" aria-label="注释 3">[3]</a></sup>的轮廓，若不是它的照引，谁能想到脚尖轻触的深底竟是死亡的亚特兰蒂斯的遗址一角。残垣四立，倾颓的传奇文明仍保有它古老的光泽，死而荣的殿堂容不下煤黑色的踪影。但既来之，何不去拜访那个名叫普洛透斯的孤独老人，听听他的敦敦教诲，犹闻柏拉图的絮絮低语。</p></div>
+          <aside class="literary-notes" aria-label="本页注释"><ol><li id="meteor-note-3" value="3">科幻小说之父凡尔纳在《海底两万里》和《神秘岛》中构想的潜艇。 <a href="#meteor-ref-3" aria-label="返回注释 3 的正文">↩</a></li></ol></aside>
+          <span class="book-folio" aria-hidden="true">5</span>
+        </section>
+<section class="literary-page" id="meteor-page-6" aria-label="第 6 页">
+          <div class="literary-columns"><p class="literary-paragraph">悉窣的嘈杂敲响凝固的沉静，不远处的撞击声愈发挠人，似要宣告罕事的发生，如同耶稣降临。在光柱无法延及的一侧，庞然黑影扰起水波，下降、下降......化作海底的秒针，又在轰然巨响中撕碎大地、音乐、梦，卷起万丈尘土，漂浮、数年后落定。好似那些同三叶虫一起沉入海底的死火山，涅槃重生，欲再演二叠纪的历史。</p>
+<p class="literary-paragraph">没有谁见证过若干世纪前的滚烫熔岩将寒武以来蓬勃的生机毁于一旦，但当它们在海底、在地表、在山口冷却，那来自地幔的炽热终凝成煤黑色的火山岩，矗立作墓碑或沉积为尸骸。举着死神的镰刀隆重入场，也难逃化为沃土的命运，孕育新生。轮回倒算是一个不错的馈赠。</p>
+<p class="literary-paragraph">那么彼石可能正是维苏威山脚下庞贝古城的难物，跨越亿载、横渡万水，传续鼎盛王朝的记忆。当火山灰掩蔽了雄鹰的视线，商贾却毫无预感灾难的临近，喧嚣的闹市与豪华的装潢，落成罗马帝国的忠实记载。归乡者再无觅归途，空留下脚印传达五米深的情愫，如果博尔赫斯和萨瓦托谈论过这段历史，又会有一首意味深长的诗流传于世。</p></div>
+
+          <span class="book-folio" aria-hidden="true">6</span>
+        </section>
+<section class="literary-page" id="meteor-page-7" aria-label="第 7 页">
+          <div class="literary-columns"><p class="literary-paragraph">晃动？！鱼儿的身体突然失衡，仿佛是地球失去了引力与磁场。她的意识却仍在指挥着一项比宗教更崇高的仪式，不愿归回孱弱的躯壳。一个踉跄，当她仰倒在床上的霎那，震荡剧烈的太平洋地壳恰畅舒气力，夏威夷群岛顿时火光冲天。岩浆像火箭一般直上青云，史无前例地，看不清喷顶的浪花是染红了平流层还是电离层，抑或是贯穿大气、散向太空，给几亿光年外的异星生物送去未来夜空中的微渺一闪。</p>
+<p class="literary-paragraph">说不定赤红的热情到达另一颗行星时会变成幽清的蓝<sup><a id="meteor-ref-4" href="#meteor-note-4" aria-label="注释 4">[4]</a></sup>，但那里的生命应该也明白，这是相互靠近的讯息。就像仙女与银河，吸引、贴近、啮合、坍缩，最终会紧拥着走向毁灭，射出最后一道照耀宇宙的脉冲。甚至遗留的黑洞也慢慢蒸发，存在被彻底抹去，只余虚无的时空与寂。</p></div>
+          <aside class="literary-notes" aria-label="本页注释"><ol><li id="meteor-note-4" value="4">当发光天体靠近我们时，所观测到的电磁波频率会相对向频谱蓝色端移动的现象。 <a href="#meteor-ref-4" aria-label="返回注释 4 的正文">↩</a></li></ol></aside>
+          <span class="book-folio" aria-hidden="true">7</span>
+        </section>
+<section class="literary-page" id="meteor-page-8" aria-label="第 8 页">
+          <div class="literary-columns"><p class="literary-paragraph">然而在罗森桥<sup><a id="meteor-ref-5" href="#meteor-note-5" aria-label="注释 5">[5]</a></sup>的另一端，暗能量汇聚、红巨星爆炸，整片宇宙照常不乏精彩，当这一处星云里的白矮星衰老，另一对双子星开始讲述他们的故事。正电子与电子相互湮灭，预示的却是一道光的诞生。或许它就将与μ子、与杂乱的微波汇合，从无穷远的边界溯回宝蓝色的星球，宛如拖尾的彗星悄然造访，而后要么远离，要么消失殆尽，周而复始。</p>
+<p class="literary-paragraph">不过，彗星会揭下它的鳞片，洒向所经之处，用流星的方式问候有界的天地。晴朗夜下的人，站在屋顶、坐在海边、蹲在山巅共同期待着美妙的划落瞬间。捕捉到浪漫的幸运儿，往往还会许下一个真挚的愿，倚着或念着所爱的人，兴许他会从地平线飞奔来，掏出一只勃艮第红的礼盒......</p></div>
+          <aside class="literary-notes" aria-label="本页注释"><ol><li id="meteor-note-5" value="5">全称“爱因斯坦-罗森桥”，俗称“虫洞”，物理学界推测的时空坍缩隧道，常被认为连接吞噬体黑洞与喷射源白洞。 <a href="#meteor-ref-5" aria-label="返回注释 5 的正文">↩</a></li></ol></aside>
+          <span class="book-folio" aria-hidden="true">8</span>
+        </section>
+<section class="literary-page" id="meteor-page-9" aria-label="第 9 页">
+          <div class="literary-columns"><p class="literary-paragraph">等等，他！鱼儿猛地惊醒，那是在雅鲁藏布的江滩，他兴奋地跑回来，递给她这只礼盒，说：“看！这是我刚刚捡来的流星！”说着，他又撷下一颗流星放入她的心口。她记起来了！这看似平平无奇的石块就是他口中的“流星”，她当时笑着收下，不是讥嘲，只蕴藏万般无言的甜蜜。</p>
+<p class="literary-paragraph">“羊儿！”一个熟悉又陌生的词汇不自觉地从泛起微笑的嘴角滑出。她试图去追忆那人的相貌，却怎么也记不起。“他是谁？对了，他叫什么？”鱼儿突然感到无限的茫然与怅惘，面对不知何时倾翻在地的盒子，她仿佛又失忆了......</p>
+<p class="literary-paragraph">“但好像没什么重要的，把石头渣滓扫一扫吧。”</p>
+<p class="literary-paragraph">鱼儿嘟哝着，一句莫名其妙的话浮现脑海：</p>
+<p class="literary-paragraph">流星不过是被太空遗弃的天体碎片划落。</p>
+<p class="literary-date">2020.07.30</p></div>
+
+          <span class="book-folio" aria-hidden="true">9</span>
+        </section>
+          </div>
+        </article>
+        </details>
+      </details>
+    </section>
+    <!-- METEOR:END -->
+    <section class="ai-works section narrative-section" id="ai-works" aria-labelledby="ai-works-title">
+      <h2 class="module-title" id="ai-works-title"><span>音乐人工具</span><span lang="en">TOOLS FOR MUSICIANS</span></h2>
+      <p class="narrative-lead">回到声音。混音时，想听见的变化往往很具体，能实现它的办法却散在不同的手册里。效果器档案室用 AI 整理这些资料，方便查找和比较。</p>
+      <a class="ai-work-link" href="/plugin-archive/">
+        <div><span class="ai-work-kind">AUDIO &amp; KNOWLEDGE</span><h3>音频效果器归档Agent</h3><p>从一份手册，到下一次声音的选择。</p><span class="work-entry-note">阅读作品介绍 <span aria-hidden="true">↗</span></span></div>
+        <span class="work-arrow" aria-hidden="true">↗</span>
+      </a>
+      <div class="music-tool-notes" aria-label="更多音乐人工具">
+        <span>小工具</span><a href="/monitor_cymatics/">monitor_cymatics <span aria-hidden="true">↗</span></a><p>持续留意一段正在发生的声音。</p>
+      </div>
+      <p class="work-coming-soon">更多敬请期待……</p>
+    </section>
+    <section class="other-platforms section narrative-section" id="other-platforms" aria-labelledby="other-platforms-title">
+      <h2 class="module-title" id="other-platforms-title"><span>其他平台</span><span lang="en">ELSEWHERE</span></h2>
+      <h3 class="platform-name"><a href="https://nocode.cn/#/profile/3604458382">NoCode 主页 <span aria-hidden="true">↗</span></a></h3>
+      <ul class="prototype-links" aria-label="NoCode 概念原型">
+        <li><a href="https://price-scan-toolbox.nocode.host/#/explore">特飞行 <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://job-requests-manager.nocode.host/">求职申请管理看板 <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://ai-stock-query-tool.nocode.host/">寻宝图 <span aria-hidden="true">↗</span></a></li>
+      </ul>
+      <h3 class="platform-name"><a href="https://github.com/hyd0309">GitHub 主页 <span aria-hidden="true">↗</span></a></h3>
+    </section>
+    <!-- Keep this as the final content section; future modules go before it. -->
+    <section class="about section coexistence narrative-section" id="about" aria-labelledby="coexist-module-title">
+      <h2 class="module-title" id="coexist-module-title"><span>写在最后</span><span lang="en">A FINAL NOTE</span></h2>
+      <div class="coexist-layout">
+        <h2 id="coexist-title">
+          <span class="coexist-title-line">AI时代，</span>
+          <span class="coexist-title-line">更需要<span class="quiet-emphasis">为感受革命。</span></span>
+        </h2>
+        <div class="coexist-copy">
+          <p>我们常常先被触动，才开始理解发生了什么。经验让感受逐渐形成判断，反复验证的判断，又沉淀为可以依靠的方法。</p>
+          <p>AI 让推演和实现变得更快，也能帮助检验原有的判断。至于什么值得改变、改变之后是否更好，仍要回到人的处境和实际体验中去辨认。</p>
+        </div>
+      </div>
+      <div class="coexist-end"><span>Let feeling lead.</span><a href="#top">回到开始 ↑</a></div>
+    </section>
+  </main>
+  <aside class="lab design-coda" id="lab" aria-labelledby="lab-title">
+    <p class="design-coda-label"><span>页尾彩蛋</span><span lang="en">DESIGN NOTES</span></p>
+    <h2 id="lab-title">从旧作到这一页</h2>
+    <p class="design-coda-intro">这个网站的视觉从早期的平面作品里来。旧作里常见大块的蓝与绿、细细的颗粒，以及手写字周围的留白。这一页以蓝色和纸面为底，让一根红线穿过标题，把原来静止在海报上的笔触带进网页。</p>
+    <details class="design-experiment">
+      <summary>片刻游玩 <span>试试色彩与光晕</span></summary>
+      <div class="lab-grid">
+        <div class="experiment" id="experiment" role="img" aria-label="由旧平面设计延伸的色彩游戏，可调整色相与光晕">
+          <div class="orb one"></div><div class="orb two"></div>
+          <span class="exp-number">FROM PRINT TO PLAY</span>
+          <p>把画面，<br>交给你的直觉。</p>
+          <span class="exp-footer">ANOTHER WAY TO FEEL</span>
+        </div>
+        <div class="lab-controls">
+          <span class="eyebrow">FOLLOW YOUR EYE</span>
+          <h3>换一种颜色，<br>看看感受如何变化。</h3>
+          <label for="hue">色彩温度 <output id="hue-value">蓝 / BLUE</output></label>
+          <input id="hue" type="range" min="0" max="100" value="0">
+          <label for="blur">光晕扩散 <output id="blur-value">50%</output></label>
+          <input id="blur" type="range" min="0" max="100" value="50">
+          <button class="reset" id="reset">回到最初的画面 ↺</button>
+          <details>
+            <summary>查看实现笔记 ↗</summary>
+            <p>滑块的 input 事件更新 CSS 自定义属性，实时改变色相与模糊半径。画面由两层径向渐变和 SVG 噪声纹理组成，不依赖外部框架。键盘方向键同样可以调节参数。</p>
+          </details>
+        </div>
+      </div>
+    </details>
+  </aside>
+  <footer><a class="wordmark" href="#top" aria-label="回到首页"><span class="open-sign" aria-hidden="true">( &nbsp; )</span></a><p>music human spirit<br><small>A SPACE, STILL BECOMING.</small></p><span>© 2026</span></footer>
+  <script type="module" src="app.mjs"></script>
+  <script type="module" src="works.mjs?v=reader-03"></script>
+  <script type="module" src="identity.mjs?v=thought-03"></script>
+</body></html>
+
+
+
+

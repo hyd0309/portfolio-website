@@ -1,0 +1,23 @@
+:root { --monitor-blue: #153cbb; --monitor-ink: #092967; --monitor-paper: #fbfaf3; --monitor-red: #c53629; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--monitor-ink); background: var(--monitor-paper); }
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none; background: radial-gradient(circle at 88% 18%, #dce7ff 0, #f5f6f2 23%, transparent 47%), linear-gradient(105deg, rgba(255,255,255,.88), rgba(251,250,243,.72)); }
+.monitor-page { position: relative; max-width: 1080px; min-height: 100vh; margin: 0 auto; padding: 42px 72px 54px; }
+.back-link { display: inline-block; color: var(--monitor-blue); font-family: ui-monospace, "Cascadia Code", monospace; font-size: 12px; letter-spacing: .08em; text-decoration: none; }
+.back-link:hover { color: var(--monitor-red); }
+.monitor-head { max-width: 760px; padding: 122px 0 92px; }
+.eyebrow { margin: 0 0 20px; color: var(--monitor-blue); font-family: ui-monospace, "Cascadia Code", monospace; font-size: 11px; letter-spacing: .16em; }
+h1, h2, p { margin-top: 0; }
+h1 { margin-bottom: 17px; color: var(--monitor-blue); font-family: Georgia, "Noto Serif SC", serif; font-size: clamp(52px, 9vw, 112px); font-weight: 400; letter-spacing: -.05em; line-height: .95; }
+h1 i { font-weight: 400; }
+.subtitle { margin: 0; color: var(--monitor-red); font-family: Georgia, "Noto Serif SC", serif; font-size: clamp(19px, 2.7vw, 29px); font-style: italic; }
+.overview { display: grid; grid-template-columns: minmax(190px, .65fr) minmax(0, 1.35fr); gap: 46px; padding: 31px 0 44px; border-top: 1px solid #b9c7ea; }
+h2 { color: var(--monitor-blue); font-family: Georgia, "Noto Serif SC", serif; font-size: 30px; font-weight: 400; }
+.overview p, .download-panel p { max-width: 610px; font-size: 17px; line-height: 1.95; }
+.download-panel { display: flex; align-items: end; justify-content: space-between; gap: 36px; padding: 38px; border: 1px solid #b9c7ea; background: rgba(255,255,255,.48); }
+.download-panel h2 { margin-bottom: 15px; }
+.download-panel p { margin-bottom: 0; }
+.download-link { flex: 0 0 auto; color: #fff; background: var(--monitor-blue); padding: 17px 23px; font-family: ui-monospace, "Cascadia Code", monospace; font-size: 13px; letter-spacing: .08em; text-decoration: none; transition: transform .18s ease, background .18s ease; }
+.download-link:hover { background: var(--monitor-red); transform: translateY(-3px); }
+footer { margin-top: 115px; color: #647ba8; font-size: 13px; }
+@media (max-width: 680px) { .monitor-page { padding: 28px 25px 42px; }.monitor-head { padding: 88px 0 67px; }.overview { display: block; }.overview h2 { margin-bottom: 26px; }.download-panel { display: block; padding: 29px; }.download-link { display: inline-block; margin-top: 28px; } }

@@ -1,0 +1,12 @@
+{
+  "provider": "soundcloud",
+  "soundcloudUrl": "https://soundcloud.com/antoniocarlosjobim/wave-2",
+  "showArtwork": false,
+  "spotifyUri": "spotify:album:7L5JR421ajSAQnG8sU0EeX",
+  "album": "Wave",
+  "artist": "Antônio Carlos Jobim",
+  "autoplay": true,
+  "fadeInSeconds": 3,
+  "volume": 0.45,
+  "tracks": []
+}
