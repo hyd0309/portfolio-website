@@ -172,6 +172,10 @@ export async function onRequest({ request, env }) {
       env.AUDIO_APP_ORIGIN
     );
 
+console.log("proxy target:", target.href);
+
+const response = await fetch(target, {
+
     return await fetch(target, {
       method: request.method,
       headers,
@@ -180,6 +184,9 @@ export async function onRequest({ request, env }) {
         : body,
       redirect: "manual"
     });
+  
+    console.log("proxy response:", response.status);
+    return response;
 
   } catch (error) {
     return new Response(
