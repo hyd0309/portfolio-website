@@ -189,6 +189,11 @@ const response = await fetch(target, {
     return response;
 
   } catch (error) {
+    console.error(
+      "plugin-archive proxy failed:",
+      error?.stack || error?.message || String(error)
+    );
+  
     return new Response(
       error.message === "请求内容过大"
         ? "请求内容过大"
