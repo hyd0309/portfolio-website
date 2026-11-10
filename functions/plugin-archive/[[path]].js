@@ -172,26 +172,16 @@ export async function onRequest({ request, env }) {
       env.AUDIO_APP_ORIGIN
     );
 
-console.log("proxy target:", target.href);
+    return await fetch(target, {
+      method: request.method,
+      headers,
+      body: ["GET", "HEAD"].includes(request.method)
+        ? undefined
+        : body,
+      redirect: "manual"
+    });
 
-const response = await fetch(target, {
-  method: request.method,
-  headers,
-  body: ["GET", "HEAD"].includes(request.method)
-    ? undefined
-    : body,
-  redirect: "manual"
-});
-
-console.log("proxy response:", response.status);
-return response;
-    
   } catch (error) {
-    console.error(
-      "plugin-archive proxy failed:",
-      error?.stack || error?.message || String(error)
-    );
-  
     return new Response(
       error.message === "请求内容过大"
         ? "请求内容过大"
