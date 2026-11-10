@@ -175,19 +175,17 @@ export async function onRequest({ request, env }) {
 console.log("proxy target:", target.href);
 
 const response = await fetch(target, {
+  method: request.method,
+  headers,
+  body: ["GET", "HEAD"].includes(request.method)
+    ? undefined
+    : body,
+  redirect: "manual"
+});
 
-    return await fetch(target, {
-      method: request.method,
-      headers,
-      body: ["GET", "HEAD"].includes(request.method)
-        ? undefined
-        : body,
-      redirect: "manual"
-    });
-  
-    console.log("proxy response:", response.status);
-    return response;
-
+console.log("proxy response:", response.status);
+return response;
+    
   } catch (error) {
     console.error(
       "plugin-archive proxy failed:",
